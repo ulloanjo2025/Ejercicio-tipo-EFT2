@@ -1,0 +1,21 @@
+import os
+os.system("cls")
+
+
+diccionario = {"nombre": "Cesar Huispe",
+    "fonos": [988778882,988877776,877666333],           
+    "activo": True
+}
+
+# Búsqueda
+print("Nombre:", diccionario["nombre"])
+print("Segundo teléfono:", diccionario["fonos"][1])
+# Inserción
+diccionario["email"] = "cesar.huispe@example.com"
+diccionario["fonos"].append(123456789)
+# Actualización
+diccionario["activo"] = False
+diccionario["fonos"][0] = 999999999 # Eliminación
+del diccionario["activo"]
+#diccionario["fonos"].pop(2)
+print(diccionario)
